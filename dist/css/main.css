@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fredericka+the+Great&family=Major+Mono+Display&family=Righteous&family=Roboto+Mono:ital,wght@0,300;0,700;1,700&display=swap");
+/* Font names */
+body {
+  background-color: #1f2833;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+header a {
+  color: #66fcf1;
+  text-decoration: none;
+  font-family: "Cutive Mono", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  margin: 0 30px;
+}
+
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  color: #66fcf1;
+  position: relative;
+  top: 100px;
+}
+
+.hero-text {
+  margin-left: 100px;
+}
+
+.hero-text2 {
+  position: relative;
+  left: 30px;
+}
+
+.hero-title {
+  font-size: 4em;
+  -webkit-text-decoration: underline 2px solid #d79922;
+          text-decoration: underline 2px solid #d79922;
+}
+
+.hero-cta {
+  display: inline-block;
+  position: relative;
+  font-size: 3em;
+  top: 150px;
+  border: 12px solid #d79922;
+  border-radius: 40px;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: #66fcf1;
+  margin-right: 100px;
+  -webkit-transition: background-size 0.5s, color 0.5s;
+  transition: background-size 0.5s, color 0.5s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d79922), to(#d79922));
+  background-image: linear-gradient(#d79922, #d79922);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position: 50% 50%;
+}
+
+.hero-cta:hover {
+  background-size: 100% 100%;
+  color: #1f2833;
+}
+
+.about-section {
+  position: relative;
+  top: 500px;
+  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  color: #66fcf1;
+  position: relative;
+}
+
+.about-title {
+  font-size: 4em;
+  margin-left: 100px;
+}
+
+.character-card {
+  font-size: 2em;
+  margin-left: 100px;
+}
+
+footer {
+  margin-top: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=main.css.map */

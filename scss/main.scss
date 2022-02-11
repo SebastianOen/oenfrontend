@@ -1,0 +1,101 @@
+@import "./variables";
+@import "./animations";
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fredericka+the+Great&family=Major+Mono+Display&family=Righteous&family=Roboto+Mono:ital,wght@0,300;0,700;1,700&display=swap");
+/* Font names */
+// Cutive mono
+// Mono Roboto
+// Righteous
+// Fredericka the great
+// Major mono display
+
+body {
+  background-color: $background_color;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    text-transform: uppercase;
+    font-size: 2.5em;
+  }
+
+  a {
+    color: $text_color;
+    text-decoration: none;
+    font-family: "Cutive Mono", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin: 0 30px;
+  }
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  color: $text_color;
+  position: relative;
+  top: 100px;
+}
+
+.hero-text {
+  margin-left: 100px;
+}
+
+.hero-text2 {
+  position: relative;
+  left: 30px;
+}
+
+.hero-title {
+  font-size: 4em;
+  text-decoration: underline 2px solid $secondary_color;
+}
+
+.hero-cta {
+  display: inline-block;
+  position: relative;
+  font-size: 3em;
+  top: 150px;
+  border: 12px solid $secondary_color;
+  border-radius: 40px;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: $text_color;
+  margin-right: 100px;
+  transition: background-size 0.5s, color 0.5s;
+  background-image: linear-gradient($secondary_color, $secondary_color);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position: 50% 50%;
+
+  &:hover {
+    background-size: 100% 100%;
+    color: $background_color;
+  }
+}
+
+.about-section {
+  position: relative;
+  top: 500px;
+  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  color: $text_color;
+  position: relative;
+}
+
+.about-title {
+  font-size: 4em;
+  margin-left: 100px;
+}
+
+.character-card {
+  font-size: 2em;
+  margin-left: 100px;
+}
+
+footer {
+  margin-top: 200px;
+  height: 200px;
+}
