@@ -1,0 +1,13 @@
+@keyframes hovering {
+  0% {
+    color: $text_color;
+  }
+
+  50% {
+    color: $secondary_color;
+  }
+
+  100% {
+    color: $text_color;
+  }
+}

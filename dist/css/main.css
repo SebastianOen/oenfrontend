@@ -1,7 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fredericka+the+Great&family=Major+Mono+Display&family=Righteous&family=Roboto+Mono:ital,wght@0,300;0,700;1,700&display=swap");
+@-webkit-keyframes hovering {
+  0% {
+    color: #66fcf1;
+  }
+  50% {
+    color: #d79922;
+  }
+  100% {
+    color: #66fcf1;
+  }
+}
+@keyframes hovering {
+  0% {
+    color: #66fcf1;
+  }
+  50% {
+    color: #d79922;
+  }
+  100% {
+    color: #66fcf1;
+  }
+}
+
 /* Font names */
 body {
   background-color: #1f2833;
+  margin: 0;
 }
 
 header {
@@ -29,6 +53,11 @@ header a {
   margin: 0 30px;
 }
 
+header a:hover {
+  -webkit-animation: hovering 1s infinite linear;
+          animation: hovering 1s infinite linear;
+}
+
 .hero-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,8 +82,6 @@ header a {
 
 .hero-title {
   font-size: 4em;
-  -webkit-text-decoration: underline 2px solid #d79922;
-          text-decoration: underline 2px solid #d79922;
 }
 
 .hero-cta {
@@ -84,24 +111,53 @@ header a {
 
 .about-section {
   position: relative;
-  top: 500px;
   font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
   color: #66fcf1;
-  position: relative;
+  margin-top: 500px;
 }
 
 .about-title {
   font-size: 4em;
   margin-left: 100px;
+  -webkit-text-decoration: underline 2px solid #d79922;
+          text-decoration: underline 2px solid #d79922;
 }
 
 .character-card {
   font-size: 2em;
-  margin-left: 100px;
+}
+
+.character-card p {
+  margin-left: 200px;
+}
+
+.character-text {
+  margin-left: 50px;
+}
+
+.character-stop {
+  margin-left: 200px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 100px auto;
+  font-size: 2em;
+  text-align: center;
+}
+
+.seperator {
+  display: block;
+  margin: 50px auto;
+  max-width: 1300px;
+  border-top: 2px solid #d79922;
 }
 
 footer {
-  margin-top: 200px;
-  height: 200px;
+  position: relative;
+  display: block;
+  height: 50px;
+  border-top: 1px solid #d79922;
+  margin-top: 80px;
 }
 /*# sourceMappingURL=main.css.map */

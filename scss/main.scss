@@ -10,6 +10,7 @@
 
 body {
   background-color: $background_color;
+  margin: 0;
 }
 
 header {
@@ -28,6 +29,10 @@ header {
     font-family: "Cutive Mono", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
     margin: 0 30px;
+
+    &:hover {
+      animation: hovering 1s infinite linear;
+    }
   }
 }
 
@@ -51,7 +56,6 @@ header {
 
 .hero-title {
   font-size: 4em;
-  text-decoration: underline 2px solid $secondary_color;
 }
 
 .hero-cta {
@@ -79,23 +83,54 @@ header {
 
 .about-section {
   position: relative;
-  top: 500px;
   font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
   color: $text_color;
-  position: relative;
+  margin-top: 500px;
+}
+
+.about-container {
 }
 
 .about-title {
   font-size: 4em;
   margin-left: 100px;
+  text-decoration: underline 2px solid $secondary_color;
 }
 
 .character-card {
   font-size: 2em;
-  margin-left: 100px;
+
+  p {
+    margin-left: 200px;
+  }
+}
+
+.character-text {
+  margin-left: 50px;
+}
+
+.character-stop {
+  margin-left: 200px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 100px auto;
+  font-size: 2em;
+  text-align: center;
+}
+
+.seperator {
+  display: block;
+  margin: 50px auto;
+  max-width: 1300px;
+  border-top: 2px solid $secondary_color;
 }
 
 footer {
-  margin-top: 200px;
-  height: 200px;
+  position: relative;
+  display: block;
+  height: 50px;
+  border-top: 1px solid $secondary_color;
+  margin-top: 80px;
 }
