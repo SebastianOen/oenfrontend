@@ -1,3 +1,10 @@
 $background_color: #1f2833;
 $text_color: #66fcf1;
 $secondary_color: #d79922;
+
+/* Media Query */
+@mixin mobile {
+  @media (max-width: 880px) {
+    @content;
+  }
+}

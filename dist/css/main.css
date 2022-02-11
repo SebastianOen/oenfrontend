@@ -1,3 +1,4 @@
+/* Media Query */
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fredericka+the+Great&family=Major+Mono+Display&family=Righteous&family=Roboto+Mono:ital,wght@0,300;0,700;1,700&display=swap");
 @-webkit-keyframes hovering {
   0% {
@@ -19,6 +20,50 @@
   }
   100% {
     color: #66fcf1;
+  }
+}
+
+@-webkit-keyframes writing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes writing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes indicator {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes indicator {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+  100% {
+    border-color: transparent;
   }
 }
 
@@ -69,10 +114,29 @@ header a:hover {
   color: #66fcf1;
   position: relative;
   top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 880px) {
+  .hero-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .hero-text {
   margin-left: 100px;
+}
+
+@media (max-width: 880px) {
+  .hero-text {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .hero-text2 {
@@ -80,17 +144,36 @@ header a:hover {
   left: 30px;
 }
 
-.hero-title {
-  font-size: 4em;
+.hero-title1,
+.hero-title2,
+.hero-title3 {
+  font-size: 4vw;
+}
+
+@media mobile {
+  .hero-title1,
+  .hero-title2,
+  .hero-title3 {
+    font-size: 8vw;
+  }
+}
+
+.hero-title2 {
+  overflow: hidden;
+  border-right: 0.15em solid #d79922;
+  white-space: nowrap;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+  -webkit-animation: writing 3.5s steps(35, end), indicator 0.75s step-end infinite;
+          animation: writing 3.5s steps(35, end), indicator 0.75s step-end infinite;
 }
 
 .hero-cta {
   display: inline-block;
   position: relative;
-  font-size: 3em;
-  top: 150px;
+  font-size: 2.5vw;
   border: 12px solid #d79922;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 20px 40px;
   text-decoration: none;
   color: #66fcf1;
@@ -102,6 +185,18 @@ header a:hover {
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-position: 50% 50%;
+}
+
+@media (max-width: 880px) {
+  .hero-cta {
+    font-size: 1.2em;
+    top: 0;
+    display: block;
+    margin: 40px auto;
+    max-width: 100px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .hero-cta:hover {
