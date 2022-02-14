@@ -135,12 +135,32 @@ header {
   text-decoration: underline 2px solid $secondary_color;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .character-card {
   font-size: 2em;
+  background-image: url("https://flowpow.one/flower_power/wp-content/uploads/2022/02/test-img2-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: 80% 20%;
+  background-size: cover;
+  background-color: rgba($color: $secondary-color, $alpha: 1);
+  padding: 50px 50px;
+}
+
+.slide-in {
+  position: relative;
+  left: -1000px;
+  transition: left 500ms;
 
   p {
     margin-left: 200px;
   }
+}
+
+.appear {
+  left: 0;
 }
 
 .character-text {
