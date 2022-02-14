@@ -259,9 +259,7 @@ footer {
 }
 
 .about-container {
-  height: 800px;
-  background-repeat: no-repeat;
-  background-position: cover;
+  height: 600px;
 }
 
 .character-card {
