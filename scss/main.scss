@@ -8,6 +8,8 @@
 // Fredericka the great
 // Major mono display
 
+/* Global */
+
 body {
   background-color: $background_color;
   margin: 0;
@@ -35,6 +37,51 @@ header {
     }
   }
 }
+
+.slide-in {
+  position: relative;
+  left: -1000px;
+  transition: left 500ms;
+
+  p {
+    margin-left: 200px;
+  }
+}
+
+.appear {
+  left: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  position: relative;
+  display: block;
+  height: 50px;
+  border-top: 1px solid $secondary_color;
+  margin-top: 80px;
+}
+
+.seperator {
+  display: block;
+  margin: 50px auto;
+  max-width: 1300px;
+  border-top: 2px solid $secondary_color;
+}
+
+/* Titles */
+
+.standard-title {
+  font-size: 4em;
+  margin-left: 100px;
+  text-decoration: underline 2px solid $secondary_color;
+  color: $text_color;
+  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Home/Hero */
 
 .hero-section {
   display: flex;
@@ -115,6 +162,8 @@ header {
   }
 }
 
+/* About */
+
 .about-section {
   position: relative;
   font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
@@ -123,20 +172,9 @@ header {
 }
 
 .about-container {
-  background-image: url("");
   height: 800px;
   background-repeat: no-repeat;
   background-position: cover;
-}
-
-.about-title {
-  font-size: 4em;
-  margin-left: 100px;
-  text-decoration: underline 2px solid $secondary_color;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .character-card {
@@ -147,20 +185,6 @@ html {
   background-size: cover;
   background-color: rgba($color: $secondary-color, $alpha: 1);
   padding: 50px 50px;
-}
-
-.slide-in {
-  position: relative;
-  left: -1000px;
-  transition: left 500ms;
-
-  p {
-    margin-left: 200px;
-  }
-}
-
-.appear {
-  left: 0;
 }
 
 .character-text {
@@ -178,17 +202,46 @@ html {
   text-align: center;
 }
 
-.seperator {
-  display: block;
-  margin: 50px auto;
-  max-width: 1300px;
-  border-top: 2px solid $secondary_color;
+/* Projects */
+
+.projects {
 }
 
-footer {
-  position: relative;
+.projects-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project1-container,
+.project2-container {
+  text-align: center;
+  text-decoration: underline 2px solid $secondary_color;
+  color: $text_color;
+  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+
+  a {
+    color: $text_color;
+  }
+}
+
+.project1,
+.project2 {
   display: block;
-  height: 50px;
-  border-top: 1px solid $secondary_color;
-  margin-top: 80px;
+  height: 300px;
+  width: 300px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &:hover {
+    border-radius: 0;
+    z-index: 200;
+    width: 600px;
+  }
+
+  img {
+    max-height: 300px;
+    max-width: 600px;
+  }
 }
