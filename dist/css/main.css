@@ -211,6 +211,13 @@ header a:hover {
   margin-top: 500px;
 }
 
+.about-container {
+  background-image: url("");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
 .about-title {
   font-size: 4em;
   margin-left: 100px;
