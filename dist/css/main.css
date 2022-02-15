@@ -114,6 +114,12 @@ header .logo {
   z-index: 1000;
 }
 
+@media (max-width: 880px) {
+  header .logo {
+    font-size: 2em;
+  }
+}
+
 header a:hover {
   -webkit-animation: hovering 1s infinite linear;
           animation: hovering 1s infinite linear;
