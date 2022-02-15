@@ -1,4 +1,6 @@
-const sliders = document.querySelectorAll(".slide-in");
+//Sliders//
+const slideRight = document.querySelectorAll(".slide-in");
+const slideUp = document.querySelectorAll(".slide-up");
 
 const appearOptions = {};
 
@@ -17,6 +19,10 @@ const appearOnScroll = new IntersectionObserver(function (
 },
 appearOptions);
 
-sliders.forEach((slider) => {
+slideRight.forEach((slider) => {
   appearOnScroll.observe(slider);
+});
+
+slideUp.forEach((slideUps) => {
+  appearOnScroll.observe(slideUps);
 });

@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/css/main.css" />
     <title>Homepage | Øen:FrontEnd</title>
+    <script src="https://kit.fontawesome.com/56afa3736b.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header id="home">
       <a href="./index.html" class="logo">Øen:frontend</a>
       <nav>
         <a href="#about">.about</a>
         <a href="#projects">.projects</a>
         <a href="./contact.html">.contact</a>
       </nav>
+      <div class="burger">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </div>
     </header>
     <main>
       <section class="hero-section">
@@ -41,7 +47,7 @@
             <p class="slide-in">currently: Student at Noroff,</p>
             <p class="slide-in">subject: Frontend development with UX-design,</p>
             <p class="slide-in">
-              experienceWith: html, css, scss, javascript, react.js, wordpress
+              experienceWith: html, css, scss, javascript, react.js, wordpress,
             </p>
             <p class="slide-in">languages: norwegian, english</p>
             <h3 class="character-stop">};</h3>
@@ -62,28 +68,34 @@
           </div>
           </div>
         </div>
-        <div class="seperator"></div>
       </section>
-      
       <section class="projects">
+        <div class="seperator"></div>
         <div class="projects-info-container">
           <h2 class="standard-title" id="projects">./Projects.done</h2>
           <div class="projects-container">
-            <div class="project1-container">
+            <div class="project1-container slide-up">
             <div class="project1"><img src="./img/Gamehub-home.png" alt=""></div>
             <a href="#">GameHub</a>
             </div>
-            <div class="project2-container">
+            <div class="project2-container slide-up">
             <div class="project2">
               <img src="./img/oen_reviews_home.png" alt="">
             </div>
             <a href="#">Øen:Reviews</a>
           </div>
+          <div class="project3-container slide-up">
+            <div class="project3">
+              <img src="./img/CSM_home.png" alt="">
+            </div>
+            <a href="#">Community Science Museum</a>
+          </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer><a href="#home">Back to top</a></footer>
     <script src="./js/script.js"></script>
+    <script src="./js/nav.js"></script>
   </body>
 </html>

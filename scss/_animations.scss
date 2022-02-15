@@ -33,3 +33,12 @@
     border-color: transparent;
   }
 }
+
+@keyframes open {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}

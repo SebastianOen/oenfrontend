@@ -67,6 +67,24 @@
   }
 }
 
+@-webkit-keyframes open {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes open {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 /* Font names */
 /* Global */
 body {
@@ -89,14 +107,11 @@ header {
 header .logo {
   text-transform: uppercase;
   font-size: 2.5em;
-}
-
-header a {
   color: #66fcf1;
   text-decoration: none;
   font-family: "Cutive Mono", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.5em;
   margin: 0 30px;
+  z-index: 1000;
 }
 
 header a:hover {
@@ -104,19 +119,103 @@ header a:hover {
           animation: hovering 1s infinite linear;
 }
 
+nav {
+  font-family: "Cutive Mono", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  margin: 0 30px;
+}
+
+@media (max-width: 880px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 600px;
+    background-color: #1f2833;
+    -webkit-animation: open 1s;
+            animation: open 1s;
+    z-index: 500;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+nav a {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .burger {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-right: 20px;
+    z-index: 600;
+    overflow: hidden;
+  }
+  .burger .line1,
+  .burger .line2,
+  .burger .line3 {
+    width: 25px;
+    border: 3px solid #d79922;
+    border-radius: 2px;
+    margin: auto;
+  }
+  .burger:hover {
+    cursor: pointer;
+  }
+}
+
 .slide-in {
   position: relative;
-  left: -1000px;
+  left: -300px;
   -webkit-transition: left 500ms;
   transition: left 500ms;
 }
 
-.slide-in p {
-  margin-left: 200px;
+.slide-up {
+  position: relative;
+  top: 300px;
+  -webkit-transition: top 1s;
+  transition: top 1s;
 }
 
 .appear {
   left: 0;
+  top: 0;
 }
 
 html {
@@ -129,6 +228,14 @@ footer {
   height: 50px;
   border-top: 1px solid #d79922;
   margin-top: 80px;
+  text-align: right;
+}
+
+footer a {
+  margin-right: 50px;
+  color: #66fcf1;
+  text-transform: uppercase;
+  font-family: "righteous", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .seperator {
@@ -140,12 +247,18 @@ footer {
 
 /* Titles */
 .standard-title {
-  font-size: 4em;
+  font-size: 4vw;
   margin-left: 100px;
   -webkit-text-decoration: underline 2px solid #d79922;
           text-decoration: underline 2px solid #d79922;
   color: #66fcf1;
   font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 880px) {
+  .standard-title {
+    font-size: 8vw;
+  }
 }
 
 /* Home/Hero */
@@ -196,11 +309,11 @@ footer {
   font-size: 4vw;
 }
 
-@media mobile {
+@media (max-width: 880px) {
   .hero-title1,
   .hero-title2,
   .hero-title3 {
-    font-size: 8vw;
+    font-size: 6.5vw;
   }
 }
 
@@ -258,18 +371,41 @@ footer {
   margin-top: 500px;
 }
 
+@media (max-width: 880px) {
+  .about-section {
+    margin-top: 400px;
+  }
+}
+
 .about-container {
   height: 600px;
 }
 
 .character-card {
-  font-size: 2em;
+  font-size: 2.5vw;
   background-image: url("https://flowpow.one/flower_power/wp-content/uploads/2022/02/test-img2-scaled.jpg");
   background-repeat: no-repeat;
   background-position: 80% 20%;
   background-size: cover;
   background-color: #d79922;
   padding: 50px 50px;
+}
+
+.character-card p {
+  margin-left: 300px;
+}
+
+@media (max-width: 880px) {
+  .character-card p {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 880px) {
+  .character-card {
+    font-size: 4vw;
+    background-position: 60% 40%;
+  }
 }
 
 .character-text {
@@ -287,7 +423,20 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 880px) {
+  .about-text {
+    max-width: 300px;
+    font-size: 1.7em;
+  }
+}
+
 /* Projects */
+@media (max-width: 880px) {
+  .projects {
+    margin-top: 300px;
+  }
+}
+
 .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,42 +444,73 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  overflow: hidden;
+}
+
+@media (max-width: 880px) {
+  .projects-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .project1-container,
-.project2-container {
+.project2-container,
+.project3-container {
   text-align: center;
   -webkit-text-decoration: underline 2px solid #d79922;
           text-decoration: underline 2px solid #d79922;
   color: #66fcf1;
-  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Righteous", Verana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
 }
 
+@media (max-width: 880px) {
+  .project1-container,
+  .project2-container,
+  .project3-container {
+    margin: 30px auto;
+  }
+}
+
 .project1-container a,
-.project2-container a {
+.project2-container a,
+.project3-container a {
   color: #66fcf1;
 }
 
 .project1,
-.project2 {
+.project2,
+.project3 {
   display: block;
   height: 300px;
   width: 300px;
-  border: 2px solid #fff;
   border-radius: 50%;
   overflow: hidden;
 }
 
 .project1:hover,
-.project2:hover {
+.project2:hover,
+.project3:hover {
   border-radius: 0;
   z-index: 200;
   width: 600px;
 }
 
+@media (max-width: 880px) {
+  .project1:hover,
+  .project2:hover,
+  .project3:hover {
+    border-radius: 50%;
+    width: 300px;
+  }
+}
+
 .project1 img,
-.project2 img {
+.project2 img,
+.project3 img {
   max-height: 300px;
   max-width: 600px;
 }
