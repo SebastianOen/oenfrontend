@@ -207,8 +207,8 @@ nav a {
 
 .slide-in {
   position: relative;
-  -webkit-transform: translateX(300px);
-          transform: translateX(300px);
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
@@ -216,8 +216,8 @@ nav a {
 
 .slide-up {
   position: relative;
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;

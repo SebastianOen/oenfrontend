@@ -104,14 +104,14 @@ nav {
 
 .slide-in {
   position: relative;
-  transform: translateX(300px);
+  transform: translateX(-100px);
   opacity: 0;
   transition: 1s;
 }
 
 .slide-up {
   position: relative;
-  transform: translateY(300px);
+  transform: translateY(100px);
   opacity: 0;
   transition: 1s;
 }
