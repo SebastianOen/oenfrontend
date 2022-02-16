@@ -568,6 +568,7 @@ form .submit {
 @media (max-width: 880px) {
   form .submit {
     font-size: 4vw;
+    border: 8px solid #d79922;
   }
 }
 

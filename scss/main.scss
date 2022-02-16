@@ -395,6 +395,7 @@ form {
 
     @include mobile {
       font-size: 4vw;
+      border: 8px solid $secondary_color;
     }
 
     &:hover {
