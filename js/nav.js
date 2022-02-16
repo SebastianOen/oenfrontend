@@ -3,6 +3,9 @@ const topNav = document.querySelector("nav");
 const line1 = document.querySelector(".line1");
 const line2 = document.querySelector(".line2");
 const line3 = document.querySelector(".line3");
+const scrollers1 = document.querySelector(".link1");
+const scrollers2 = document.querySelector(".link2");
+const scrollers3 = document.querySelector(".link3");
 
 let openMenu = false;
 
@@ -20,4 +23,27 @@ window.addEventListener("resize", () => {
     line1.classList.remove("hidden");
     line3.classList.remove("hidden");
   }
+});
+
+// Scrollers NAV //
+
+scrollers1.addEventListener("click", () => {
+  topNav.classList.remove("open");
+  topNav.classList.remove("hidden");
+  line1.classList.remove("hidden");
+  line3.classList.remove("hidden");
+});
+
+scrollers2.addEventListener("click", () => {
+  topNav.classList.remove("open");
+  topNav.classList.remove("hidden");
+  line1.classList.remove("hidden");
+  line3.classList.remove("hidden");
+});
+
+scrollers3.addEventListener("click", () => {
+  topNav.classList.remove("open");
+  topNav.classList.remove("hidden");
+  line1.classList.remove("hidden");
+  line3.classList.remove("hidden");
 });

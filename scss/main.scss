@@ -365,3 +365,50 @@ footer {
     max-width: 600px;
   }
 }
+
+/* Contact */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  align-items: center;
+
+  .submit {
+    background-color: $background_color;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 2vw;
+    border: 12px solid $secondary_color;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: $text_color;
+    transition: background-size 0.5s, color 0.5s;
+    background-image: linear-gradient($secondary_color, $secondary_color);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: 50% 50%;
+    max-width: 150px;
+
+    &:hover {
+      background-size: 100% 100%;
+      color: $background_color;
+    }
+  }
+
+  .email,
+  .message {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 4px solid $secondary_color;
+    border-radius: 10px;
+    font-size: 2vw;
+    background-color: $background_color;
+    color: $text_color;
+    font-family: "righteous", Verdana, Geneva, Tahoma, sans-serif;
+  }
+}

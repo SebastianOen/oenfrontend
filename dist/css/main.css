@@ -527,4 +527,59 @@ footer a {
   max-height: 300px;
   max-width: 600px;
 }
+
+/* Contact */
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .submit {
+  background-color: #1f2833;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 2vw;
+  border: 12px solid #d79922;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #66fcf1;
+  -webkit-transition: background-size 0.5s, color 0.5s;
+  transition: background-size 0.5s, color 0.5s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d79922), to(#d79922));
+  background-image: linear-gradient(#d79922, #d79922);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position: 50% 50%;
+  max-width: 150px;
+}
+
+form .submit:hover {
+  background-size: 100% 100%;
+  color: #1f2833;
+}
+
+form .email,
+form .message {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 4px solid #d79922;
+  border-radius: 10px;
+  font-size: 2vw;
+  background-color: #1f2833;
+  color: #66fcf1;
+  font-family: "righteous", Verdana, Geneva, Tahoma, sans-serif;
+}
 /*# sourceMappingURL=main.css.map */
