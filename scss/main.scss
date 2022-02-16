@@ -393,6 +393,10 @@ form {
     background-position: 50% 50%;
     max-width: 150px;
 
+    @include mobile {
+      font-size: 4vw;
+    }
+
     &:hover {
       background-size: 100% 100%;
       color: $background_color;
@@ -410,5 +414,10 @@ form {
     background-color: $background_color;
     color: $text_color;
     font-family: "righteous", Verdana, Geneva, Tahoma, sans-serif;
+
+    @include mobile {
+      font-size: 4vw;
+      max-width: 300px;
+    }
   }
 }

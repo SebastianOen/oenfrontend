@@ -565,6 +565,12 @@ form .submit {
   max-width: 150px;
 }
 
+@media (max-width: 880px) {
+  form .submit {
+    font-size: 4vw;
+  }
+}
+
 form .submit:hover {
   background-size: 100% 100%;
   color: #1f2833;
@@ -581,5 +587,13 @@ form .message {
   background-color: #1f2833;
   color: #66fcf1;
   font-family: "righteous", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 880px) {
+  form .email,
+  form .message {
+    font-size: 4vw;
+    max-width: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
