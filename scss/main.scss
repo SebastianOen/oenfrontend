@@ -104,19 +104,22 @@ nav {
 
 .slide-in {
   position: relative;
-  left: -300px;
-  transition: left 500ms;
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 1s;
 }
 
 .slide-up {
   position: relative;
-  top: 200px;
-  transition: top 1s;
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 1s;
 }
 
 .appear {
-  left: 0;
-  top: 0;
+  opacity: 1;
+  transform: translateX(0);
+  transform: translateY(0);
 }
 
 html {
