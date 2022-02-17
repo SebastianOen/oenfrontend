@@ -63,6 +63,7 @@ nav {
   a {
     color: $text_color;
     text-decoration: none;
+    margin: 0 20px;
   }
 }
 
@@ -349,6 +350,10 @@ footer {
   width: 300px;
   border-radius: 50%;
   overflow: hidden;
+
+  a {
+    text-decoration: none;
+  }
 
   &:hover {
     border-radius: 0;

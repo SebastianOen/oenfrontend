@@ -157,6 +157,7 @@ nav {
 nav a {
   color: #66fcf1;
   text-decoration: none;
+  margin: 0 20px;
 }
 
 .hidden {
@@ -505,6 +506,12 @@ footer a {
   width: 300px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.project1 a,
+.project2 a,
+.project3 a {
+  text-decoration: none;
 }
 
 .project1:hover,
