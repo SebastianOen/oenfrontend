@@ -422,3 +422,22 @@ form {
     }
   }
 }
+
+// thanks //
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thanksmessage {
+  display: block;
+  margin-bottom: 100px;
+  margin: 100px auto;
+
+  @include mobile {
+    font-size: 4vw;
+    margin-bottom: 0;
+  }
+}
