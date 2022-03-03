@@ -282,7 +282,7 @@ footer {
   }
 
   @include mobile {
-    font-size: 6vw;
+    font-size: 4vw;
     background-position: 60% 40%;
   }
 }
@@ -304,6 +304,21 @@ footer {
   @include mobile {
     max-width: 300px;
     font-size: 1.7em;
+  }
+}
+
+#character-item {
+  display: flex;
+
+  .second-line {
+    margin-left: 30px;
+    color: $secondary_color;
+  }
+
+  @include mobile {
+    .second-line {
+      margin-left: 5px;
+    }
   }
 }
 
@@ -388,7 +403,7 @@ form {
     display: inline-block;
     position: relative;
     font-size: 2vw;
-    border: 12px solid $secondary_color;
+    border: 8px solid $secondary_color;
     border-radius: 20px;
     padding: 10px 20px;
     text-decoration: none;
