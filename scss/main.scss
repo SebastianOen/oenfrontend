@@ -366,6 +366,7 @@ footer {
   width: 300px;
   border-radius: 50%;
   overflow: hidden;
+  transition: border-radius 1s;
 
   a {
     text-decoration: none;
