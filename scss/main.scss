@@ -1,6 +1,8 @@
 @import "./variables";
 @import "./animations";
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fredericka+the+Great&family=Major+Mono+Display&family=Righteous&family=Roboto+Mono:ital,wght@0,300;0,700;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@300;400&display=swap");
 /* Font names */
 // Cutive mono
 // Mono Roboto
@@ -13,6 +15,7 @@
 body {
   background-color: $background_color;
   margin: 0;
+  background-image: url("https://flowpow.one/flower_power/wp-content/uploads/2022/06/crissxcross.png");
 }
 
 header {
@@ -42,7 +45,7 @@ header {
 }
 
 nav {
-  font-family: "Cutive Mono", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $font, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
   margin: 0 30px;
   display: flex;
@@ -141,7 +144,7 @@ footer {
     margin-right: 50px;
     color: $text_color;
     text-transform: uppercase;
-    font-family: "righteous", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font, Verdana, Geneva, Tahoma, sans-serif;
   }
 }
 
@@ -159,7 +162,7 @@ footer {
   margin-left: 100px;
   text-decoration: underline 2px solid $secondary_color;
   color: $text_color;
-  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $font, Verdana, Geneva, Tahoma, sans-serif;
 
   @include mobile {
     font-size: 8vw;
@@ -171,7 +174,7 @@ footer {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $font, Verdana, Geneva, Tahoma, sans-serif;
   color: $text_color;
   position: relative;
   top: 100px;
@@ -251,7 +254,7 @@ footer {
 
 .about-section {
   position: relative;
-  font-family: "Righteous", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $font, Verdana, Geneva, Tahoma, sans-serif;
   color: $text_color;
   margin-top: 500px;
 
@@ -342,11 +345,12 @@ footer {
 
 .project1-container,
 .project2-container,
-.project3-container {
+.project3-container,
+.project4-container {
   text-align: center;
   text-decoration: underline 2px solid $secondary_color;
   color: $text_color;
-  font-family: "Righteous", Verana, Geneva, Tahoma, sans-serif;
+  font-family: $font, Verana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
 
   @include mobile {
@@ -360,7 +364,8 @@ footer {
 
 .project1,
 .project2,
-.project3 {
+.project3,
+.project4 {
   display: block;
   height: 300px;
   width: 300px;
@@ -406,7 +411,7 @@ form {
     font-size: 2vw;
     border: 4px solid $secondary_color;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 7px 20px;
     text-decoration: none;
     color: $text_color;
     transition: background-size 0.5s, color 0.5s;
@@ -437,7 +442,7 @@ form {
     font-size: 2vw;
     background-color: $background_color;
     color: $text_color;
-    font-family: "righteous", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font, Verdana, Geneva, Tahoma, sans-serif;
 
     @include mobile {
       font-size: 4vw;
