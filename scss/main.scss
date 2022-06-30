@@ -372,6 +372,7 @@ footer {
   border-radius: 50%;
   overflow: hidden;
   transition: border-radius 1s;
+  border: 2px solid $text_color;
 
   a {
     text-decoration: none;
