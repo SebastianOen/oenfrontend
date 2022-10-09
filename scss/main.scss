@@ -470,3 +470,12 @@ form {
     margin-bottom: 0;
   }
 }
+
+.contact {
+  p {
+    font-family: $font, Verdana, Geneva, Tahoma, sans-serif;
+    color: $text_color;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
