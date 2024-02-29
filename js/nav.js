@@ -40,10 +40,3 @@ scrollers2.addEventListener("click", () => {
   line1.classList.remove("hidden");
   line3.classList.remove("hidden");
 });
-
-scrollers3.addEventListener("click", () => {
-  topNav.classList.remove("open");
-  topNav.classList.remove("hidden");
-  line1.classList.remove("hidden");
-  line3.classList.remove("hidden");
-});
