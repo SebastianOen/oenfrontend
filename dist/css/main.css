@@ -396,7 +396,7 @@ footer a {
   width: 300px;
   border-radius: 50%;
   overflow: hidden;
-  transition: border-radius, width 1s ease-in-out;
+  transition: border-radius 1s ease-in-out, width 1s ease-in-out;
 }
 .project1 a,
 .project2 a,
