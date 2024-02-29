@@ -346,7 +346,6 @@ footer {
   text-align: center;
   text-decoration: underline 2px solid $secondary_color;
   color: $text_color;
-
   font-size: 1.5em;
 
   @include mobile {
@@ -366,7 +365,7 @@ footer {
   width: 300px;
   border-radius: 50%;
   overflow: hidden;
-  transition: border-radius 200ms ease-in-out;
+  transition: border-radius, width 1s ease-in-out;
 
   a {
     text-decoration: none;
@@ -442,25 +441,6 @@ form {
       font-size: 4vw;
       max-width: 300px;
     }
-  }
-}
-
-// thanks //
-
-.thankyou {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.thanksmessage {
-  display: block;
-  margin-bottom: 100px;
-  margin: 100px auto;
-
-  @include mobile {
-    font-size: 4vw;
-    margin-bottom: 0;
   }
 }
 
